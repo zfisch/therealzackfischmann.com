@@ -1,0 +1,328 @@
+.btn {
+	transition: all .3s ease-in;
+	text-align: center;
+}
+
+/* Pulse Grow */
+@keyframes pulse-grow {
+	to {
+		transform: scale(1.1);
+	}
+}
+
+.pulse-grow {
+	display: inline-block;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+	&:hover {
+		animation-name: pulse-grow;
+		animation-duration: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+
+.img-responsive {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear:both;
+	height:0;
+	width:0;
+}
+
+html, body {
+	padding:0px;
+	margin:0px;
+}
+
+
+html {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-weight: 1000;
+	color: #678;
+	line-height: 1.5em;
+}
+
+.linkedIn,
+.twitter,
+.gmail {
+	width:100%;
+}
+
+
+.linkedIn img,
+.twitter img,
+.gmail img {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#headerContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.mainImage { 
+	background: url('../img/ZackWater.jpg') no-repeat center center;
+	position: relative;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	height:100%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.secondImage { 
+	background: url('../img/ZackGlacier.jpg') no-repeat center center;
+	position: relative;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	height:100%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@font-face {
+	font-family: fColor;
+	src: url('../fonts/FillMeWithColor.ttf');
+}
+
+.floaterText {
+	position: absolute;
+	text-align: center;
+	margin: 0px;
+	top: 43%;
+	width: 100%;
+	color: #fff;
+	text-shadow: 0px 1px 1.5px black;
+	font-weight: 200;
+	font-family: 'Raleway', sans-serif;
+}
+
+.floaterText p {
+	margin: 0 0 0 0;
+}
+
+.floaterBig {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.floaterSmall {
+	font-size: 1.6em;
+	font-style: italic;
+}
+
+.raleway {
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	font-weight:200;
+}
+
+.raleway li {
+	text-align: left;
+	font-style: italic;
+}
+
+.ralewayBig {
+	margin-top: 0%;
+	margin-bottom: 100px;
+	margin-right: 20%;
+	margin-left: 20%;
+	padding:0;
+}
+
+.ralewayBig li {
+	font-family: "Raleway", sans-serif;
+	font-weight: 200;
+	text-align: left;
+	font-style: normal;
+	font-size: 2em;
+	padding-left: 15px;
+	text-transform: uppercase;
+	margin-left: 20%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.raleway h2 {
+	font-size: 1.5em;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	font-weight: bolder;
+	color: #678
+}
+
+.raleway h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.2em;
+	margin-top: 0;
+	color: #678;
+	font-weight: bolder;
+}
+
+.btn-lg {
+  padding: 10px 16px;
+  font-size: inherit;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-default {
+  color: #678;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #ffffff;
+  background-color: #678;
+  border-color: #adadad;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-image: none;
+}
+
+#contact {
+	margin-top: -50px;
+}
+
+.container.full {
+	width:100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+.row.full {
+	width: 100%;
+}
+
+/* this is a custom CSS stylesheet */
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+
+.animated {
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-ms-animation-duration:3s;
+	-o-animation-duration:3s;
+	animation-duration:3s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	}
+
+.animated.hinge{
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+	animation-duration:1s;
+	}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.07); }
+    100% { -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.07); }
+    100% { -moz-transform: scale(1); }
+}
+
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.07); }
+    100% { -o-transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+}
+
+.pulse:hover {
+	-webkit-animation-name: none;
+	-moz-animation-name: none;
+	-o-animation-name: none;
+	animation-name: none;
+}
