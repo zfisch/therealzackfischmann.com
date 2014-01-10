@@ -4,9 +4,8 @@
     	<meta charset utf-8>
     	<title>Zack Fischmann</title>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<!--Bootstrap-->
         <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <!--Bootstrap-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
     	<link href="css/custom.css" rel="stylesheet">
     	<script src="js/respond.js"></script>
@@ -16,15 +15,15 @@
         <div id="headerContainer">
             <div class="mainImage">
                 <div class="floaterText">
-                    <p class="floaterSmall">Hi, my name is </p>
-                    <p class="floaterBig">Zack Fischmann</p>
+                    <h1 class="floaterSmall">Hi, my name is </h1>
+                    <h1 class="floaterBig">Zack Fischmann</h1>
                 </div>
             </div>
         </div>
         <div class="container full">
     		<div class="row">
     			<div class="col-xs-12">
-    				<h1 class="raleway">I'm an artist, an adventurer, and I like to get shit done.</h1>
+    				<h1 class="raleway headline">I'm an artist, an adventurer, and I like to get shit done.</h1>
     			</div>
     		</div>
             <div class="row full">
@@ -71,7 +70,7 @@
             </div><!-- end projects row-->
             <div class="row"> <!-- awards row -->
                 <div class="col-xs-12">
-                    <h1 class="raleway">Accomplishments</h1>
+                    <h1 class="raleway headline">Accomplishments</h1>
                 </div>
             </div>
             <div class="row">
@@ -82,9 +81,9 @@
                         <li>Founded CETSA</li>
                         <li>Fastest Growing Startup @ EIA 2013</li>
                         <li>1st place Big Ideas at Berkeley -- Improving Student Life</li>
-                        <li>Hitch-hiked across America... twice</li> 
+                        <li>Hitch-hiked across America...twice</li> 
                         <li>Wrote, recorded, produced, and released several full-length albums</li>
-                        <li>Toured across America... twice</li>
+                        <li>Toured across America...twice</li>
                     </ul>
                 </div>
             </div> <!-- end awards row -->
@@ -92,7 +91,7 @@
         <div id="headerContainer">
             <div class="secondImage">
                 <div class="floaterText">
-                    <p class="floaterBig">Did I mention that I like to get outside?</p>
+                    <h1 class="floaterBig">Did I mention that I like to get outside?</h1>
                 </div>
             </div>
         </div>
@@ -126,5 +125,13 @@
         </div>
     		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.fittext.js"></script>
+            <script type="text/javascript">
+                $(".floaterBig").fitText(1.0, { minFontSize: '45px', maxFontSize: '60px'});
+                $(".floaterSmall").fitText(1.2, { minFontSize: '30px', maxFontSize: '35px'});
+                $(".headline").fitText(1.2, { minFontSize: '30px', maxFontSize: '40px'});
+                $(".ralewayBig").fitText(1.2, { minFontSize: '20px', maxFontSize: '30px'});
+
+            </script>
     </body>
 </html>
