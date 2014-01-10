@@ -158,6 +158,15 @@ h2 {
     width: 100%;
 }
 
+.floaterBig2 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 0 0 0;
+    display: block;
+    width: 100%;
+}
+
 .floaterSmall {
 	text-transform: none;
 	font-weight: normal;
@@ -254,11 +263,6 @@ h2 {
 	width:100%;
 	margin-left: 0px;
 	margin-right: 0px;
-}
-
-
-.row.full {
-	width: 100%;
 }
 
 /* this is a custom CSS stylesheet */
