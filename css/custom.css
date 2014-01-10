@@ -175,8 +175,8 @@ h2 {
 .ralewayBig {
 	margin-top: 0%;
 	margin-bottom: 100px;
-	margin-right: 20%;
-	margin-left: 20%;
+	margin-right: 10%;
+	margin-left: 10%;
 	padding:0;
 }
 
@@ -188,7 +188,7 @@ h2 {
 	font-size: 2em;
 	padding-left: 15px;
 	text-transform: uppercase;
-	margin-left: 20%;
+	margin-left: 15%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
