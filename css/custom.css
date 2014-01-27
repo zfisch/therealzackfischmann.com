@@ -335,7 +335,7 @@ footer {
 	-ms-animation-iteration-count: infinite;
 	-o-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
-	}
+}
 
 .animated.hinge{
 	-webkit-animation-duration:1s;
@@ -343,7 +343,7 @@ footer {
 	-ms-animation-duration:1s;
 	-o-animation-duration:1s;
 	animation-duration:1s;
-	}
+}
 
 
 @-webkit-keyframes pulse {
@@ -389,6 +389,7 @@ footer {
    transition: opacity .15s ease-in-out;
    -moz-transition: opacity .15s ease-in-out;
    -webkit-transition: opacity .15s ease-in-out;
+   -webkit-backface-visibility: hidden;
 }
 
 .fade:hover {
