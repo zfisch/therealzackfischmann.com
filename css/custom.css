@@ -299,16 +299,22 @@ a:active {
 /* this is a custom CSS stylesheet */
 
 footer {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
 	padding: 2em 0;
 	margin: 3em 0;
 	border-top: 1px solid #ddd;
 	color: #999;
 }
 
-.img-link{
+.social-media-link{
 	text-decoration: none !important;
 	border: none;
-	padding-right: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 50px;
 }
 
 #social{
