@@ -237,7 +237,9 @@ a:active {
 }
 
 #projects {
-	margin-bottom: 8%
+	margin-bottom: 8%;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .headline {
