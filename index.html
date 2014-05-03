@@ -5,7 +5,6 @@
     	<title>Zack Fischmann</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
-        <!--Bootstrap-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
     	<link href="css/custom.css" rel="stylesheet">
     	<script src="js/respond.js"></script>
@@ -19,132 +18,146 @@
                   ga('send', 'pageview');
         </script>
     </head>
-
     <body>
+        <div id="menu">
+            <a href="#menu">
+                <img src="img/menu.svg" alt="" height="40px" width="40px">
+            </a>
+        </div>
+        <div id="navbar">  
+            <div class="row" id="navbar-items">
+                <div class="navbar-link col-xs-3">
+                    <a class="scroll" href="#Home"><span>Home</span></a>
+                </div>
+                <div class="navbar-link col-xs-3">
+                    <a class="scroll" href="#About"><span>About</span></a>
+                </div>
+                <div class="navbar-link col-xs-3">
+                    <a class="scroll" href="#Projects"><span>Projects</span></a>
+                </div>
+                <div class="navbar-link col-xs-3">
+                    <a class="scroll" href="#Contact"><span>Contact</span></a>
+                </div>
+            </div>
+        </div>
         <div id="headerContainer">
             <div class="mainImage">
-                <div class="floaterText">
-                    <h1 class="floaterSmall">Hi, my name is </h1>
-                    <h1 class="floaterBig">Zack Fischmann</h1>
-                </div>
+                <section id="Home">
+                    <div class="floaterText">
+                        <h1 class="floaterSmall">Hi, my name is </h1>
+                        <h1 class="floaterBig">Zack Fischmann</h1>
+                    </div>
+                </section>
             </div>
         </div>
         <div class="container full">
-    		<div class="row">
-    			<div class="col-xs-12">
-    				<h1 class="headline" id="headline-intro">I'm an artist, an adventurer, and I like to get things done</h1>
-    			</div>
-    		</div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
-                    <div class="bio">
-                        <p id="bio">
-                        When I was 19 years old, I ventured off on the most insane and awesome experience of my life. I hitch-hiked across the United States, made my way from busking on street corners to playing sold out venues, recorded and produced records with my best friends, fell in love with life, and learned a hell of a lot about myself and the world around me.
-                         <br><br>
-                        After living on the road for several years, I decided to return to school. In 2012, at age 26, I accepted a full scholarship to study at the University of California, Berkeley.
-                         <br><br>
-                        In less than two years, I have completed the <a href="http://cet.berkeley.edu">Center for Entrepreneurship and Technology</a> Concentration in Engineering Leadership, won first place at the <a href="http://bigideas.berkeley.edu/">Big Ideas @ Berkeley</a> competition, and won Fastest Growing Startup at the <a href="http://inacademy.eu">European Innovation Academy</a> in Tallinn, Estonia. I also founded and currently lead the Center for Entrepreneurship and Technology Student Association.
-                        <br><br>
-                        I have accomplished all of this while maintaining a 4.0 GPA, and teaching myself web development in my free time.
-                         <br><br>
-                        I will be graduating in May of 2014, and I'm looking for the next adventure!
-                        </p>
+    		<section id="About">
+                <div class="row">
+        			<div class="col-xs-12">
+        				<h1 class="headline" id="headline-intro">I'm an artist, an adventurer, and I like to get things done</h1>
+        			</div>
+        		</div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                        <div class="bio">
+                            <p id="bio">
+                            When I was 19 years old, I hitch-hiked from California to Maine in seven days. Six months later, I was supporting myself by busking on streetcorners and playing in coffeeshops. I eventually formed and joined several bands, founded a record label, toured across America, performed hundreds of shows for thousands of people, and produced several albums, one of which was released on my <a href="http://www.woodsist.com/">favorite record label ever</a>.
+                             <br><br>
+                            After living on the road for several years, I accepted a full scholarship to study at the <a href="http://berkeley.edu">University of California, Berkeley</a>, where I designed my own program called Change and Innovation. At Cal, I completed the <a href="http://cet.berkeley.edu">Center for Entrepreneurship and Technology</a> Concentration in Engineering Leadership, won first place at the <a href="http://bigideas.berkeley.edu/">Big Ideas @ Berkeley</a> competition, won Fastest Growing Startup at the <a href="http://inacademy.eu">European Innovation Academy</a> in Tallinn, Estonia, and founded and served as Co-President of the Center for Entrepreneurship and Technology Student Association. I also maintained a 4.0 GPA.
+                            <br><br>
+                            I'm currently learning web development and experimenting with a project I hope to release in the near future. You can get a sense of what it will be from <a href="http://oneminutelongsongblog.blogspot.com">this blog</a>. You can find me writing code at hackathons in the S.F. Bay Area, drinking beer with friends in Oakland, or playing banjo in my underwear at home.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row full" id="projects">
-                <div class="col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12">
-                    <a href="http://berkeley.edu">
-                        <img src="img/Berkeleylogo1.png" class="img-responsive img-projects fade">
+            </section>
+            <section id="Projects">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="headline" id="projects-headline">Projects</h1>
+                    </div>
+                </div>
+                <div class="row full" id="projects">
+                    <div class="col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12">
+                        <a href="http://berkeley.edu">
+                            <img src="img/Berkeleylogo1.png" class="img-responsive img-projects fade">
+                        </a>
+                        <div class="raleway projects">
+                            <h3>Student</h3>
+                        </div>
+                        <p class="raleway projects">I wrote my own Bachelor of Science program at U.C. Berkeley called Change and Innovation. My focus is on energy, ecology, technology, and entrepreneurship. I've also taken a couple computer science courses.</p>
+                        <br><br><br><br>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <a href="http://cet.berkeley.edu">
+                            <img src="img/CETSAlogo1.png" class="img-responsive img-projects fade">
+                        </a>
+                        <div class="raleway projects">
+                            <h3>Co-Founder, Co-President</h3>
+                        </div>
+                        <p class="raleway projects">I was appointed by the Managing Director of the <a href="http://cet.berkeley.edu">Center for Entrepreneurship and Technology</a> to form and lead a student organization that helps aspiring entrepreneurs get started.</p>
+                        <br><br><br><br>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <a href="http:///marmalademountain.bandcamp.com">
+                            <img src="img/marmalademountainjamjar1.png" class="img-responsive img-projects fade">
+                        </a>
+                        <div class="raleway projects">
+                            <h3>Musician, Producer</h3>
+                        </div>
+                        <p class="raleway projects">I've been writing, recording, producing, performing, and selling music for 12 years. I've organized and played hundreds of shows in over 30 states. My current project is called <a href="http://marmalademountain.bandcamp.com/">Marmalade Mountain.</a></p>
+                        <br><br><br><br>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <img src="img/popfizzlogo1.png" class="img-responsive img-projects fade">
+                        <div class="raleway projects">
+                            <h3>Co-Founder, Team Lead</h3>
+                        </div>
+                        <p class="raleway projects">I conceptualized, founded, and recruited a team to build a mobile application that helps people find cool stuff to do. We won Fastest Growing Startup at the <a href="http://inacademy.eu">European Innovation Academy</a>, 2013.</p>
+                        <br><br><br><br>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <a href="http://ourenvironment.berkeley.edu/2013/05/espm-team-wins-first-place-big-ideas-berkeley/">
+                            <img src="img/scienceshop1.png" class="img-responsive img-projects fade">
+                        </a>
+                        <div class="raleway projects">
+                            <h3>Associate Director</h3>
+                        </div>
+                        <p class="raleway projects">I helped found and organize a <a href="http://www.livingknowledge.org/livingknowledge/science-shops">science shop</a> at U.C. Berkeley. We won first place at the <a href="http://bigideas.berkeley.edu/">Big Ideas @ Berkeley</a> competition and raised over $10,000. I also wrote and directed this <a href="http://vimeo.com/77020014">promotional video</a>.</p>
+                        <br><br><br><br>
+                    </div> 
+                </div>
+            </section>
+        </div>           
+        <div class="container" id="closeout">
+            <section id="Contact">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="headline">Interested in music, art, tech, travel? <br><br><a href="mailto:zacharyrobert@gmail.com">Let's chat!</a></h1>
+                    </div>
+                </div>
+                <footer>
+                    <a href="http://www.linkedin.com/pub/zack-fischmann/64/442/b16" class="social-media-link">
+                        <img style="border:0;" src="img/social/linkedin.png" class="fade">
                     </a>
-                    <div class="raleway projects">
-                        <h3>Student</h3>
-                    </div>
-                    <p class="raleway projects">I wrote my own Bachelor of Science program at U.C. Berkeley called Change and Innovation. My focus is on energy, ecology, technology, and entrepreneurship. I'm also taking a couple computer science courses.</p>
-                    <br><br><br><br>
-                </div>
-                <div class="col-lg-2 col-sm-6 col-xs-12">
-                    <a href="http://cet.berkeley.edu">
-                        <img src="img/CETSAlogo1.png" class="img-responsive img-projects fade">
+                    <a href="mailto:zacharyrobert@gmail.com" class="social-media-link">
+                        <img style="border:0;" src="img/social/gmail.png" class="fade">
                     </a>
-                    <div class="raleway projects">
-                        <h3>Co-Founder, Co-President</h3>
-                    </div>
-                    <p class="raleway projects">I was appointed by the Managing Director of the <a href="http://cet.berkeley.edu">Center for Entrepreneurship and Technology</a> to form and lead a student organization that helps aspiring entrepreneurs get started.</p>
-                    <br><br><br><br>
-                </div>
-                <div class="col-lg-2 col-sm-6 col-xs-12">
-                    <a href="http:///marmalademountain.bandcamp.com">
-                        <img src="img/marmalademountainjamjar1.png" class="img-responsive img-projects fade">
+                    <a href="https://twitter.com/zackfischmann" class="social-media-link">
+                        <img style="border:0;" src="img/social/twitter.png" class="fade">
                     </a>
-                    <div class="raleway projects">
-                        <h3>Musician, Producer</h3>
-                    </div>
-                    <p class="raleway projects">I've been writing, recording, producing, performing, and selling music for 12 years. I've organized and played hundreds of shows in over 30 states. My current project is called <a href="http://marmalademountain.bandcamp.com/">Marmalade Mountain.</a></p>
-                    <br><br><br><br>
-                </div>
-                <div class="col-lg-2 col-sm-6 col-xs-12">
-                    <img src="img/popfizzlogo1.png" class="img-responsive img-projects fade">
-                    <div class="raleway projects">
-                        <h3>Co-Founder, Team Lead</h3>
-                    </div>
-                    <p class="raleway projects">I conceptualized, founded, and recruited a team to build a mobile application that helps people find cool stuff to do. We won Fastest Growing Startup at the <a href="http://inacademy.eu">European Innovation Academy</a>, 2013.</p>
-                    <br><br><br><br>
-                </div>
-                <div class="col-lg-2 col-sm-6 col-xs-12">
-                    <a href="http://ourenvironment.berkeley.edu/2013/05/espm-team-wins-first-place-big-ideas-berkeley/">
-                        <img src="img/scienceshop1.png" class="img-responsive img-projects fade">
-                    </a>
-                    <div class="raleway projects">
-                        <h3>Associate Director</h3>
-                    </div>
-                    <p class="raleway projects">I helped found and organize a <a href="http://www.livingknowledge.org/livingknowledge/science-shops">science shop</a> at U.C. Berkeley. We won first place at the <a href="http://bigideas.berkeley.edu/">Big Ideas @ Berkeley</a> competition and raised over $10,000. I also wrote and directed this <a href="http://vimeo.com/77020014">promotional video</a>.</p>
-                    <br><br><br><br>
-                </div> 
-            </div><!-- end projects row-->
-        </div> <!-- end container-->            
-        <div id="headerContainer">
-            <div class="secondImage">
-                <div class="floaterText">
-                    <h1 class="floaterBig2">Did I mention that I like to get outside?</h1>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="headline">I'm looking for work!</h1>
-                    <p id="tryMe">
-                        <br>
-                        Product Management, Customer Experience, Front-End Dev
-                        <br><br><br>
-                        I will be available full-time in June, 2014.</p>
-                    <br><br>
-                    <h2 id="contact"><a href="mailto:zacharyrobert@gmail.com"><button type="button" class="btn btn-default btn-lg animated">Contact Me</button></a></h2>
-                </div>
-            </div>
-            <footer class="footer">
-                <a href="http://www.linkedin.com/pub/zack-fischmann/64/442/b16" class="social-media-link">
-                    <img style="border:0;" src="img/social/linkedin.png" class="fade">
-                </a>
-                <a href="mailto:zacharyrobert@gmail.com" class="social-media-link">
-                    <img style="border:0;" src="img/social/gmail.png" class="fade">
-                </a>
-                <a href="https://twitter.com/zackfischmann" class="social-media-link">
-                    <img style="border:0;" src="img/social/twitter.png" class="fade">
-                </a>
-                <br><br><br>
-                <p><a href="https://github.com/zfisch/zfisch.github.io">Hand-coded</a> with <span class="glyphicon glyphicon-heart-empty"></span> by Zack Fischmann.
-                </br>DIY 2014.</p>
-            </footer>
+                    <br><br><br>
+                    <p><a href="https://github.com/zfisch/zfisch.github.io">Hand-coded</a> with <span class="glyphicon glyphicon-heart-empty"></span> by Zack Fischmann.
+                    </br>DIY 2014.</p>
+                </footer>
+            </section>
         </div>
     		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
+            <script src="js/custom.js"></script>
             <script src="js/jquery.fittext.js"></script>
             <script type="text/javascript">
                 $(".floaterBig").fitText(1.0, { minFontSize: '45px', maxFontSize: '70px'});
-                $(".floaterBig2").fitText(1.2, { minFontSize: '30px', maxFontSize: '60px'});
-                $(".floaterSmall").fitText(1.2, { minFontSize: '30px', maxFontSize: '35px'});
+                $(".floaterSmall").fitText(1.5, { minFontSize: '30px', maxFontSize: '35px'});
                 $(".headline").fitText(1.2, { minFontSize: '35px', maxFontSize: '45px'});
                 $(".ralewayBig").fitText(1.2, { minFontSize: '20px', maxFontSize: '30px'});
                 $("#bio").fitText(3.0, { minFontSize: '16px', maxFontSize: '20px'});

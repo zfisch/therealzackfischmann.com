@@ -3,27 +3,55 @@
 	text-align: center;
 }
 
-/* Pulse Grow */
-@keyframes pulse-grow {
-	to {
-		transform: scale(1.1);
-	}
+#menu {
+	float: left;
+	z-index: 1900000;
+	position: fixed;
 }
 
-.pulse-grow {
+#navbar {
+	height: 40px;
+	width: 100%;
+	opacity: 0.6;
+	background-color: black;
+	position: fixed;
+	z-index: 10;
+	display:none;
+}
+
+.navbar-link {
+	font-size: 1.5em;
+	list-style-type: none;
+	color: #fff;
+	font-weight: 300;
 	display: inline-block;
+	text-align: center;
+	margin-top: 5px
+}
 
-	@include hideTapHighlightColor();
-	@include hardwareAccel();
-	@include improveAntiAlias();
+#navbar-items {
+	display: none;
+	text-align: center
+}
 
-	&:hover {
-		animation-name: pulse-grow;
-		animation-duration: $defaultDuration;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-	}
+#navbar-items a:link {
+	text-decoration:none;
+	color: #fff;
+}
+
+#navbar-items a:visited {
+	text-decoration:none;
+	color: #fff;
+}
+
+#navbar-items a:hover {
+	text-decoration:underline;
+	color: #fff;
+}
+
+#navbar-items a:active {
+	text-decoration:none;
+	color: #fff;
 }
 
 .img-responsive {
@@ -65,14 +93,13 @@ body {
 	width: 100%;
 	font-family: "Raleway", sans-serif;
 	color: #47525d;
+	z-index: -1
 
 }
 
 
 h1 {
 	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
 	display: block;
     width: 100%;
     font-family: 'Raleway', sans-serif;
@@ -108,17 +135,17 @@ a:link {
 
 a:visited {
 	text-decoration:underline;
-	color: #2a6496;
+	color: inherit;
 }
 
 a:hover {
 	text-decoration:underline;
-	color: #428bca;
+	color: #2a6496;
 }
 
 a:active {
 	text-decoration:underline;
-	color: #428bca;
+	color: #2a6496;
 }
 
 
@@ -182,15 +209,7 @@ a:active {
     width: 100%;
 }
 
-.floaterBig2 {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	font-weight: 400;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-    display: block;
-    width: 100%;
-}
+
 
 .floaterSmall {
 	text-transform: none;
@@ -215,19 +234,13 @@ a:active {
 	height: 100%;
 	width: auto;
 	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 8%;
-	
+	margin-right: auto;	
 }
 
 #bio {
 	font-weight: 400;
-	margin-bottom: 100px;
 	line-height: 1.7em;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 10%;
-	padding-bottom: 8%;
+	padding: 5%;
 }
 
 .projects {
@@ -237,14 +250,13 @@ a:active {
 }
 
 #projects {
-	margin-bottom: 8%;
 	margin-left: 0;
 	margin-right: 0;
 }
 
 .headline {
 	font-weight: 300;
-	padding-top: 8%;
+	padding-top: 4%;
 	padding-bottom: 8%;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -253,6 +265,11 @@ a:active {
 #headline-intro {
 	margin-bottom: 0;
 	padding-bottom: 0;
+}
+
+#projects-headline {
+	padding-bottom: 50px;
+	margin-top: 0
 }
 
 #accomplishments {
@@ -330,7 +347,7 @@ a:active {
   background-image: none;
 }
 
-#contact {
+#contactme {
 	margin-top: 20px;
 }
 
@@ -340,7 +357,6 @@ a:active {
 	margin-right: 0px;
 }
 
-/* this is a custom CSS stylesheet */
 
 footer {
 	text-align: center;
@@ -370,70 +386,6 @@ footer {
 
 #outro{
 	text-align: center;
-}
-.animated {
-	-webkit-animation-fill-mode:both;
-	-moz-animation-fill-mode:both;
-	-ms-animation-fill-mode:both;
-	-o-animation-fill-mode:both;
-	animation-fill-mode:both;
-	-webkit-animation-duration:3s;
-	-moz-animation-duration:3s;
-	-ms-animation-duration:3s;
-	-o-animation-duration:3s;
-	animation-duration:3s;
-	-webkit-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
-	-ms-animation-iteration-count: infinite;
-	-o-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
-
-.animated.hinge{
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	-ms-animation-duration:1s;
-	-o-animation-duration:1s;
-	animation-duration:1s;
-}
-
-
-@-webkit-keyframes pulse {
-    0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.10); }
-    100% { -webkit-transform: scale(1); }
-}
-
-@-moz-keyframes pulse {
-    0% { -moz-transform: scale(1); }	
-	50% { -moz-transform: scale(1.10); }
-    100% { -moz-transform: scale(1); }
-}
-
-@-o-keyframes pulse {
-    0% { -o-transform: scale(1); }	
-	50% { -o-transform: scale(1.10); }
-    100% { -o-transform: scale(1); }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }	
-	50% { transform: scale(1.10); }
-    100% { transform: scale(1); }
-}
-
-.pulse {
-	-webkit-animation-name: pulse;
-	-moz-animation-name: pulse;
-	-o-animation-name: pulse;
-	animation-name: pulse;
-}
-
-.pulse:hover {
-	-webkit-animation-name: none;
-	-moz-animation-name: none;
-	-o-animation-name: none;
-	animation-name: none;
 }
 
 .fade {
