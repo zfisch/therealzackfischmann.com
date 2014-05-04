@@ -3,57 +3,6 @@
 	text-align: center;
 }
 
-#menu {
-	float: left;
-	z-index: 1900000;
-	position: fixed;
-}
-
-#navbar {
-	height: 40px;
-	width: 100%;
-	opacity: 0.6;
-	background-color: black;
-	position: fixed;
-	z-index: 10;
-	display: none;
-}
-
-.navbar-link {
-	font-size: 1.5em;
-	list-style-type: none;
-	color: #fff;
-	font-weight: 300;
-	display: inline-block;
-	text-align: center;
-	margin-top: 5px;
-}
-
-#navbar-items {
-	text-align: center;
-	display: none;
-}
-
-#navbar-items a:link {
-	text-decoration:none;
-	color: #fff;
-}
-
-#navbar-items a:visited {
-	text-decoration:none;
-	color: #fff;
-}
-
-#navbar-items a:hover {
-	text-decoration:underline;
-	color: #fff;
-}
-
-#navbar-items a:active {
-	text-decoration:none;
-	color: #fff;
-}
-
 .img-responsive {
 	text-align: center;
 	margin-right: auto;
