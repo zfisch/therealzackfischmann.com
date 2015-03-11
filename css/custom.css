@@ -144,6 +144,10 @@ header {
 	font-style: italic;
 }
 
+.floaterBig {
+    font-style: none;
+}
+
 /* ======= Main Body ======== */
 
 .headline {
