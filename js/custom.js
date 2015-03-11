@@ -1,4 +1,6 @@
 $( document ).ready(function() {
-    $(".floaterText").removeClass("hide");
-    $(".floaterText").addClass("animated fadeIn");
+    $(".floaterText").fadeIn();
+    $("#floaterBig").fitText(1.0, { minFontSize: '45px', maxFontSize: '70px'});
+    $("#floaterSmall").fitText(1.5, { minFontSize: '30px', maxFontSize: '35px'});
+    $(".headline").fitText(1.5, { minFontSize: '30px', maxFontSize: '35px'});
 });
