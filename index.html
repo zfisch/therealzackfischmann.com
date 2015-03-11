@@ -23,7 +23,7 @@
     <body>
         <header>
             <div class="floaterText">
-                <h1 class="floaterSmall">Hi, my name is <span class="floaterBig">ZACK FISCHMANN</span></h1>
+                <h1 id="floaterSmall">Hi, my name is <span id="floaterBig">ZACK FISCHMANN</span></h1>
             </div>
         </header>
         <main>
@@ -58,14 +58,14 @@
                 <p class="social-media-link"><a href="http://twitter.com/_zfisch">Twitter</a></p>
                 <p class="social-media-link"><a href="mailto:zacharyrobert@gmail.com">Email</a></p>
             </div>
-            <p>© 2015 Zack Fischmann, unless otherwise noted.</p>
+            <p>&#169; 2015 Zack Fischmann, unless otherwise noted.</p>
         </footer>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="js/jquery.fittext.js"></script>
         <script type="text/javascript">
-            $(".floaterBig").fitText(1.0, { minFontSize: '45px', maxFontSize: '70px'});
-            $(".floaterSmall").fitText(1.5, { minFontSize: '30px', maxFontSize: '35px'});
+            $("#floaterBig").fitText(1.0, { minFontSize: '45px', maxFontSize: '70px'});
+            $("#floaterSmall").fitText(1.5, { minFontSize: '30px', maxFontSize: '35px'});
             $(".headline").fitText(1.5, { minFontSize: '30px', maxFontSize: '35px'});
-        // </script>
+        </script>
     </body>
 </html>

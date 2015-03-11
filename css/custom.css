@@ -51,11 +51,6 @@ a:active {
 	color: inherit;
 }
 
-.hide{
-    display: none;
-}
-
-
 /* ======= Responsive Stuff ======= */
 
 @media all and (min-width: 960px) {
@@ -127,10 +122,9 @@ header {
 	width: 100%;
 	color: #fff;
 	text-shadow: 0px 1.3px 1.8px black;
-	font-weight: 300;
 }
 
-.floaterBig, .floaterSmall {
+#floaterBig, #floaterSmall {
 	font-weight: 400;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -139,13 +133,13 @@ header {
     line-height: 1;
 }
 
-.floaterSmall {
+#floaterSmall {
 	text-transform: none;
 	font-style: italic;
 }
 
-.floaterBig {
-    font-style: none;
+#floaterBig {
+    font-style: normal
 }
 
 /* ======= Main Body ======== */
