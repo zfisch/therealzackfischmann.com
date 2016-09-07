@@ -16,14 +16,14 @@ body {
 	position: relative;
 	height: 100%;
 	width: 100%;
-	font-family: "droid-serif", sans-serif;
+	font-family: sans-serif;
 }
 
 h1 {
 	text-align: center;
 	display: block;
     width: 100%;
-	font-family: "adelle", sans-serif;
+	font-family: sans-serif;
 }
 
 a:link {
@@ -61,17 +61,8 @@ a:active {
     main{
     	padding: 0 25% 0 25%;
     }
-    .headline{
-    	margin: 10% 0 10% 0;
-    }
-    .social {
-        width: 80%;
-    }
-    .social-media-link{
-    	margin: 5% 5% 5% 5%;
-    }
 }
- 
+
 @media all and (max-width: 959px) and (min-width: 600px) {
     body{
         font-size: 18px;
@@ -79,17 +70,8 @@ a:active {
     main{
     	padding: 0 15% 0 15%;
     }
-    .headline{
-    	margin: 10% 0 10% 0;
-    }
-    .social {
-        width: 80%;
-    }
-    .social-media-link{
-    	margin: 8% 5% 8% 5%;
-    }
 }
- 
+
 @media all and (max-width: 599px) and (min-width: 320px) {
     body{
         font-size: 14px;
@@ -97,90 +79,28 @@ a:active {
     main{
     	padding: 0 10% 0 10%;
     }
-    .headline{
-    	margin: 15% 0 15% 0;
-    }
-    .social {
-        width: 100%;
-    }
-    .social-media-link{
-    	margin: 10% 3% 10% 3%;
-    }
-}
-
-/* ======= Header Stuff ======= */
-
-header {
-	background: url('../img/zackmountain.jpg') no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-}
-
-.floaterText {
-	position: absolute;
-	text-align: center;
-	margin: 0;
-	top: 45%;
-	width: 100%;
-	color: #fff;
-	text-shadow: 0px 1.3px 1.8px black;
-}
-
-#floaterBig, #floaterSmall {
-	font-weight: 400;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-    display: block;
-    width: 100%;
-    line-height: 1;
-}
-
-#floaterSmall {
-	text-transform: none;
-	font-style: italic;
-}
-
-#floaterBig {
-    font-style: normal
 }
 
 /* ======= Main Body ======== */
 
-.headline {
-	text-align: center
+header {
+    padding-top: 30px;
 }
 
-.bio {
-	font-size: 1.1em;
-	line-height: 1.7em
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
 }
 
-/* ======= Footer ======= */
-
-footer {
-	width: 100%;
-	margin: 5% 0 30px 0;
-	border-top: 1px solid #ddd;
-	color: #678;
-	font-size: .8em;
-}
-
-footer > p{
-	text-align: center;
-}
-.social{
-	text-align: center;
-	margin: 0 auto 0 auto;
-	border:0;
-}
-
-.social-media-link{
-	display: inline-block;
+p {
+    text-align: justify;
+    font-size: 1.5em;
+    width: 90%;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 40px;
 }
